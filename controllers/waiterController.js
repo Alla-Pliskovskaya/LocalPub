@@ -22,7 +22,6 @@ exports.waiter_list = function(req, res, next) {
     Waiter.find({})
         .exec(function (err, list_waiters) {
             if (err) { return next(err); }
-            //Successful, so render
             res.render('waiter_list', { title: 'Waiter List', waiter_list: list_waiters});
         });
 };

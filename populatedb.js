@@ -113,7 +113,6 @@ function createWaiters(cb) {
                 waiterCreate('Betty', 'Bronte', '1999-09-13', 'trainee', callback);
             },
         ],
-        // optional callback
         cb
     );
 }
@@ -152,7 +151,6 @@ function createTables(cb) {
                 tableCreate(4, 4, waiters[3], "In the corner of the hall", callback);
             }
         ],
-        // optional callback
         cb);
 }
 
@@ -171,7 +169,6 @@ function createTimeTables(cb) {
                 timetableCreate(tables[3], customers[3], '2021-12-16T21:00:00', '2021-12-16T23:00:00', callback)
             },
         ],
-        // optional callback
         cb);
 }
 
