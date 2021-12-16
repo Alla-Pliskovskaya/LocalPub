@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    ul
+        each waiter in waiter_list
+            li Name - #{waiter.first_name + ' ' + waiter.last_name}
+                |  (Birth date: #{waiter.date_of_birth.toString().slice(0,15)},
+                | Category: #{waiter.category})
+        else
+            li There are no waiters.
