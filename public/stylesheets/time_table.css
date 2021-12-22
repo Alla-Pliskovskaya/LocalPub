@@ -25,4 +25,8 @@ h2 {
 form {
     font-family: sans-serif;
     color: rebeccapurple;
+    width: 300px;
+    border: 2px solid rebeccapurple;
+    padding: 20px;
+    background-color: plum;
 }

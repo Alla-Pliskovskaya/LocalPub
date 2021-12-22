@@ -38,7 +38,7 @@ exports.time_table_reserve = async function(req, res)
     let time_to = Number(req.body.time_to);
     let table_number = Number(req.body.table_number);
 
-    if (time_from === time_to || time_to < time_from) {
+    if (time_from === time_to || time_to < time_from || time_from < Number(Date().toString().slice(16,18))) {
         res.send("Incorrect input");
         return;
     }
