@@ -1,0 +1,11 @@
+h1 {
+    font-family: monospace;
+    color: green;
+    text-shadow: 3px 3px 1px greenyellow;
+}
+
+ul {
+    font-family: cursive;
+    list-style: "\1F464";
+    color: darkgreen;
+}

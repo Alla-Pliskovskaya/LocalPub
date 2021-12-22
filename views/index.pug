@@ -3,8 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #[em LocalPub].
-
   h1 Dynamic content
+  style
+      include ../public/stylesheets/index.css
 
   if error
     p Error getting dynamic content.
@@ -12,5 +13,5 @@ block content
     p The pub has the following record counts:
 
     ul
-      li #[strong Waiters:] !{data.waiter_count}
-      li #[strong Tables:] !{data.table_count}
+      li #[strong Waiters:] !{data.waiter_count};
+      li #[strong Tables:] !{data.table_count}.

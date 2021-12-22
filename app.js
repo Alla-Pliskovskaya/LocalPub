@@ -8,7 +8,6 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 let catalogRouter = require('./routes/catalog'); //Import routes for "catalog" area of site
 
-
 const app = express();
 
 //Set up mongoose connection

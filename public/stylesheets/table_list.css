@@ -1,0 +1,11 @@
+h1 {
+    font-family: monospace;
+    color: chocolate;
+    text-shadow: 3px 3px 1px bisque;
+}
+
+ul {
+    font-family: cursive;
+    list-style: "\1F4CC";
+    color: crimson;
+}

@@ -15,5 +15,4 @@ TableSchema
         return '/catalog/table/' + this._id;
     });
 
-//Export model
 module.exports = mongoose.model('Table', TableSchema);

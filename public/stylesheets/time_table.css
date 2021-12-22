@@ -1,0 +1,28 @@
+h1 {
+    font-family: sans-serif;
+    color: purple;
+    text-shadow: 3px 3px 1px lavender;
+}
+
+ul {
+    font-family: sans-serif;
+    list-style: "\1F4CB";
+    color: midnightblue;
+}
+
+ol {
+    font-family: serif;
+    list-style: circle;
+    color: darkmagenta;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: purple;
+    text-shadow: 3px 3px 1px lavender;
+}
+
+form {
+    font-family: sans-serif;
+    color: rebeccapurple;
+}

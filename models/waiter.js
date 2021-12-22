@@ -11,19 +11,10 @@ let WaiterSchema = new Schema(
     }
 );
 
-// Virtual for waiter's full name
-WaiterSchema
-.virtual('name')
-.get(function () {
-  return this.first_name + ', ' + this.last_name;
-});
-
-// Virtual for waiter's URL
 WaiterSchema
 .virtual('url')
 .get(function () {
   return '/catalog/waiter/' + this._id;
 });
 
-//Export model
 module.exports = mongoose.model('Waiter', WaiterSchema);

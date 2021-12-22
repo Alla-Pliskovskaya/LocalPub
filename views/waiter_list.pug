@@ -2,10 +2,12 @@ extends layout
 
 block content
     h1= title
+    style
+        include ../public/stylesheets/waiter_list.css
     ul
         each waiter in waiter_list
             li Name - #{waiter.first_name + ' ' + waiter.last_name}
-                |  (Birth date: #{waiter.date_of_birth.toString().slice(0,15)},
-                | Category: #{waiter.category})
+                |  (birth date: #{waiter.date_of_birth.toString().slice(0,15)},
+                |   category: #{waiter.category})
         else
             li There are no waiters.

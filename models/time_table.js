@@ -15,5 +15,4 @@ TimeTableSchema
         return '/catalog/time_table/' + this._id;
     });
 
-//Export model
 module.exports = mongoose.model('TimeTable', TimeTableSchema);
